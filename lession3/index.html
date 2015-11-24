@@ -1,0 +1,33 @@
+<html>
+	<head>
+	   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	  <script src="js/app.js"></script>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	</head>
+	<body ng-app="myApp">	
+	<div class="text-center">
+		<div class="panel panel-default">
+		  <div class="panel-heading">Angularjs Lession 2 </div>
+		  <div class="panel-body">
+			<p  class="bg-info">Use the ng-hide directive in conjunction with a controller to change the visibility status of image on button click.</p>
+			  <div class="form-group" ng-controller="MyCtrl">
+				<button class="btn btn-primary btn-lg active " ng-click="toggle()">Toggle</button>
+				<br/>
+				<div class="clearfix"><br/></div>
+			   <img class="img-circle" ng-show="visible" src="img/manish.jpg">
+			 </div>
+		  </div>
+		</div>
+	</div>
+
+
+	<nav>
+  <ul class="pager">
+    <li class="previous"><a href="../lession1/index.html"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="../lession3/index.html">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+
+</body>
+</html>
