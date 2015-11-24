@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Angularjs : Lession 3 </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/readable/bootstrap.min.css" rel="stylesheet" integrity="sha256-xZf1oKvAz2ou2qhEduvwW4dDmGlmHADVup7mEqdKU6k= sha512-go0HHuJkbEVqGsIW4i045yNp9n/jCC5Dywtr9MmZ41n6h+tBhCLod4AvtLxrFp489K2KppmGbufl0iKnhMwcOQ==" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
+  </head>
+  <body ng-app>
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Angularjs</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>        
+      </div>
+    </div>
+	<br><br><br>	
+	<div class="container">	 
+	<h1>Lession 3</h1>
+		<div class="panel panel-default ">
+			<div class="panel-heading">
+			  <h3 class="panel-title">filters</h3>
+			  <p>Angular uses the pipe (|) character to combine filters with variables in expressions.</p>
+			</div>
+			<div class="panel-body">			
+			<div class="row">
+          <div class="col-lg-6">
+            <div class="well bs-component">
+              <form class="form-horizontal">				
+				<div class="form-group">
+				  <label class="col-lg-2 control-label" for="focusedInput">Name</label>
+				  <div class="col-lg-10">
+					<input class="form-control" ng-model="name" type="text" placeholder="type in with caps off">
+					<p>My name in uppercase : {{name | uppercase}}</p>
+				  </div>
+				</div>
+
+			<div class="form-group">
+				  <label class="col-lg-2 control-label" for="focusedInput">Name</label>
+				  <div class="col-lg-10">
+					<input class="form-control" ng-model="name2" type="text" placeholder="type in with caps on">
+					<p>My name in lowercase : {{name2 | lowercase}}</p>
+				  </div>
+				</div>
+
+			</form>
+			
+			<span class="col-lg-2"></span>			
+															
+			</div>
+			</div></div></div>
+	  </div>	
+	</div>	
+	<div class="container">
+	<nav>
+	  <ul class="pager">
+		<li class="previous"><a href="../lession2/index.html"><span aria-hidden="true">&larr;</span> Older</a></li>
+		<li class="next"><a href="../lession4/index.html">Newer <span aria-hidden="true">&rarr;</span></a></li>
+	  </ul>
+	</nav>
+	</div>	
+  </body>
+</html>
